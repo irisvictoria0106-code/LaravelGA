@@ -15,13 +15,5 @@ class VentaDetalle extends Model
         'subtotal'
     ];
     
-    public function venta()
-    {
-        return $this->belongsTo(Venta::class);
-    }
-    
-    public function producto()
-    {
-        return $this->belongsTo(Producto::class);
-    }
+   
 }

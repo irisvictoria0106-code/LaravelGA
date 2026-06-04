@@ -15,13 +15,5 @@ class Venta extends Model
         'user_id'
     ];
     
-    public function detalles()
-    {
-        return $this->hasMany(VentaDetalle::class);
-    }
     
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 }

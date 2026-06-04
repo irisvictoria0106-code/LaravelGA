@@ -53,8 +53,6 @@ class VentaController extends Controller
                 'folio' => 'V-' . str_pad(Venta::count() + 1, 4, '0', STR_PAD_LEFT),
                 'fecha' => now(),
                 'total' => $total,
-                'metodo_pago' => 'efectivo',
-                'notas' => null,
                 'user_id' => Auth::id(),
             ]);
             
