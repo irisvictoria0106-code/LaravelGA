@@ -16,8 +16,6 @@ return new class extends Migration
         $table->string('folio', 20)->unique();
         $table->date('fecha');
         $table->decimal('total', 10, 2);
-        $table->string('metodo_pago', 30);
-        $table->text('notas')->nullable();
         $table->foreignId('user_id')->constrained()->onDelete('cascade');
         $table->timestamps();
     });
